@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Promisses</title>
+</head>
+<body>
+    <script>
+        const resposta = fetch('http://api.postmon.com.br/v1/ceb/45000505');
+        resposta.then(data => data.json())
+                .then(data => {console.log(data);})
+                .catch(erro => console.log(erro));
+    </script>
+</body>
+</html>
